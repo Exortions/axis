@@ -4,7 +4,7 @@ import uuid
 import os
 
 class Screenshotter:
-    def execute():
+    def execute(self):
         name = f'{uuid.uuid4()}.png'
         ss = pyautogui.screenshot()
         ss.save(name)
@@ -14,8 +14,8 @@ class Screenshotter:
             
             return data, name
 
-    def start():
-        data, name = execute()
+    def start(self):
+        data, name = self.execute()
         os.remove(name)
 
         return data

