@@ -2,7 +2,7 @@
 The best malware out there.
 
 # Features
-Web inject
+Web inject (Not implemented)
 Remote code execution in: Node.js, Python, C++, C.
 Ransomware
 Keylogger
@@ -19,7 +19,7 @@ Running the build command will build the executable in out/Firefox.exe.
 $ build.bat
 #or
 $ chmod +x build.sh
-$ build.sh
+$ sudo build.sh
 ```
 It is disguised as firefox.exe, and it is undetectable from all antivirus.
 Only works on Windows.
