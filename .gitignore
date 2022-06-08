@@ -1,7 +1,2 @@
-.stuff.txt
-.test.txt
 .venv
 .vscode
-build
-dist
-*.spec
