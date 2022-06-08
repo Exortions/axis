@@ -2,16 +2,15 @@
 The best malware out there.
 
 # Features
-Web inject (Not implemented)
-Remote code execution in: Node.js, Python, C++, C.
-Ransomware
-Keylogger
-Screenshot (timed, or when asked)
-Kernel access
-Execute terminal commands
-Password grabber (Google Chrome, Discord)
-Browser monitor (Google Chrome, Firefox, Safari, etc.)
-Ping URL
+- Web inject (Not implemented)
+- Remote code execution in: Node.js, Python, C++, C.
+- Ransomware
+- Keylogger
+- Screenshot (timed, or when asked)
+- Execute terminal commands
+- Password grabber (Google Chrome, Discord)
+- Browser monitor (Google Chrome, Firefox, Safari, etc.)
+- Ping URL
 
 # Building
 Running the build command will build the executable in out/Firefox.exe.
